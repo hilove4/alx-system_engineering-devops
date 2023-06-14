@@ -1,5 +1,4 @@
 #!/bin/bash
 export TRUEKNOWLEDGE=42
-value="$TRUEKNOWLEDGE"
-result=$((128 + value))
+result=$((128 + 42))
 echo "$result"
