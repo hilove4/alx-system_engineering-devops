@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Get the value of the PATH variable
+path_value="$PATH"
+
+# Replace colons with line breaks using tr command
+directories=$(echo "$path_value" | tr ':' '\n')
+
+# Count the number of directories using wc command
+count=$(echo "$directories" | wc -l)
+
+# Print the count
+echo "Number of directories in PATH: $count"
+
