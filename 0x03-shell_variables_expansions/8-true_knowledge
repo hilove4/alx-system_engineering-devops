@@ -1,0 +1,5 @@
+#!/bin/bash
+export TRUEKNOWLEDGE=42
+value="$TRUEKNOWLEDGE"
+result=$((128 + value))
+echo "$result"
